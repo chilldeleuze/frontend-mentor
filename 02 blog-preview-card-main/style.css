@@ -1,0 +1,86 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    font-family: Figtree, Arial, Helvetica, sans-serif
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 7%);
+    font-weight: 900;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 42%);
+    font-weight: 500;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+    width: 300px;
+    border: black solid;
+    border-width: 1px;
+    border-radius: 32px;
+    padding: 20px;
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+    background-color: white;
+}
+
+.card__date {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.card__img {
+    border-radius: 12px;
+}
+
+.card__tag {
+    background-color: hsl(47, 88%, 63%);
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.card__author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 900;
+}
+
+.card__author-portrait {
+    width: 32px;
+    height: 32px;
+}
+
+img {
+    width: 100%
+}
