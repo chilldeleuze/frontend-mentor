@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+html, body {
+    margin:0
+}
+
+a {
+    color: var(--white)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: var(--grey-900);
+    color: var(--white);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile__container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: var(--grey-800);
+    border-radius: 8px;
+    padding: 24px;
+    align-items: stretch;
+}
+
+.profile__picture {
+    border-radius: 100%;
+    width: 64px;
+    align-self: center;
+}
+
+.profile__name {
+    align-self: center;
+    font-size: 1.3rem;
+    padding-top: 24px;
+    padding-bottom: 4px;
+
+}
+
+.profile__short-bio {
+    align-self: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: grey
+
+}
+
+.social-links__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.social-link__button {
+    background-color: var(--grey-700);
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.social-link__button a {
+    text-decoration: none;
+}
+
+.social-link__button:hover {
+    background-color: var(--grey-900);
+}
+
+.profile__location {
+    color: var(--green);
+    align-self: center;
+}
