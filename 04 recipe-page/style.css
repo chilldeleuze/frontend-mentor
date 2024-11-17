@@ -1,3 +1,10 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 :root {
     --white: hsl(0, 0%, 100%);
     --stone-100: hsl(30, 54%, 90%);
@@ -25,7 +32,7 @@ body {
     width: 700px;
     background-color: var(--white);
     padding: 32px;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 main {
@@ -39,6 +46,7 @@ h1, h2, h3 {
 
 h1 {
     color: var(--stone-900);
+    margin: 20px 0px;
 }
 
 h2 {
@@ -58,9 +66,93 @@ table {
     background-color: var(--rose-50);
     border-radius: 8px;
     padding: 20px;
+    margin: 40px 0;
 }
+
+.preparation__box h2 {
+    color: var(--rose-800);
+    font-size: 20px;
+}
+
+.ingredients__box li::marker {
+    color: var(--brown-800)
+}
+
 
 hr {
     color: var(--stone-600);
     margin: 48px 0px;
+}
+
+ol {
+    margin-top: 20px;
+    margin-left: 20px;   
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 32px;  
+
+}
+
+/* adjacent selector to ensure that the margin is only added between items*/
+li + li { 
+    margin-top: 10px;
+}
+
+li {
+
+    padding-left: 20px;
+}
+
+ul li::marker {
+
+    left: -4px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: bolded-numbers;
+}
+
+ol li {
+    counter-increment: bolded-numbers;
+    position: relative;
+    padding-left: 32px;
+    
+}
+
+ol li::before {
+    left: -4px;
+    content: counter(bolded-numbers) ". ";
+    font-weight: 900;
+    color: var(--brown-800);
+    position: absolute;
+}
+
+.preparation-time__list li::marker {
+    color: var(--rose-800)
+}
+
+table {
+    margin: 20px 0px;
+    border-collapse: collapse;
+}
+
+th {
+text-align: left;
+font-weight: normal;
+}
+
+th, td {
+    padding: 10px 20px;
+}
+
+td {
+    font-weight: bold;
+    color: var(--brown-800);
+}
+
+tr + tr {
+    border-top: 1px solid var(--stone-150);
 }
